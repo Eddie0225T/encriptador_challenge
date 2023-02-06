@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de Texto Online</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="imagenes/Logo.png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="imagenes/Logo.png" alt="logo de alura">
+        </header>
+        <main>
+
+            <form>
+
+                <div>
+
+                    <textarea cols="60" rows="10" class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+                    <h6 class="informacion"><img id="infologo" src="imagenes/Vector.png" alt="Símbolo de Información">  Solo letras minúsculas y sin acentos</h6>
+                    
+                
+                    <div class="botones">
+
+                        <input type="button" value="encriptar" class="btn-encriptar" onclick="botonEncriptar()">Encriptar</input>
+                        <input type="button" value="desencriptar" class="btn-desencriptar" onclick="botonDesencriptar()">Desencriptar</input>
+
+                    </div>
+
+                </div>      
+
+                <div class="resultado">
+
+                    <textarea class="mensaje" placeholder="No se ha encontrado ningún mensaje" readonly></textarea>
+                    <button class="copiar" onclick="copiar()">Copiar</button> 
+
+                </div>
+
+            </form>
+
+            <script src="script.js"></script>
+            
+        </main>
+
+        <footer>
+            <p class="copyright">&copy Copyright 2023 Eduardo Téllez. All rights reserved</p>
+        </footer>
+
+    </body>
+    
+</html>
+
